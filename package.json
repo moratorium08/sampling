@@ -1,0 +1,15 @@
+{
+  "name": "sampling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browserify": "browserify ./src/index.js -t babelify --outfile index.js"
+  },
+  "author": "moratorium08",
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^7.3.0"
+  }
+}
