@@ -1,9 +1,8 @@
 const $ = require('jquery');
 const d3 = require('d3');
 
-const sign = (x) => {return x > 0 ? 1 : -1;} ;
-const inverseLaplaceCamulative = (u) => 
-	{return -sign(u - 0.5)*Math.log(1-2*Math.abs(u-0.5));};
+const sign = (signed) => (signed > 0 ? 1 : -1);
+const inverseLaplaceCamulative = (u) => (-sign(u - 0.5)*Math.log(1-2*Math.abs(u-0.5)));
 
 const sampledData = Array.apply(null, new Array(21)).map(() => {return 0;});
 
