@@ -5,22 +5,29 @@
 		<title>sampling test</title>
 		<script src="index.js" charset="utf-8"></script>
 		<link rel="stylesheet" href="index.css">
-		<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-2.2.3.js"></script>
-		<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> 
-		<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 	</head>
 	<body>
 		<div class="container">
 			<h1>sampling Laplace Distribution</h1>
 			<div class="row">
-				<svg id="svg"></svg>
+				<p>ラプラス分布 \(f(x) = \frac{1}{2}exp(-| x |) \) のサンプリングをしたもの</p>
 			</div>
 			<div class="row">
-				<div class="col-xs-offset-2">
-					<button type="button" class="btn btn-default" id="add-one">1つ増やす</button>
-					<button type="button" class="btn btn-primary" id="add-ten">10増やす</button>
-					<button type="button" class="btn btn-warning" id="add-hundred">100増やす</button>
+				<p id="discharged"></p>
+			</div>
+			<div class="row">
+				<svg class="col-md-12" id="svg"></svg>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<button type="button" class="btn btn-default" id="add-one">+1</button>
+					<button type="button" class="btn btn-default" id="add-ten">+10</button>
+					<button type="button" class="btn btn-default" id="add-hundred">+100</button>
+					<button type="button" class="btn btn-primary" id="reset">reset</button>
 				</div>
 			</div>
 		</div>
