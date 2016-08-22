@@ -9,6 +9,10 @@ const laplaceDistribution = () => {
 	return laplaceRandom;
 }
 
+const oddDistribution() = (x) => {
+	if (x > 
+	
+
 function setupLaplaceGraph(svg, height) {
 	const rects = svg
 		.selectAll('rect')
