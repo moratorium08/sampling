@@ -9,10 +9,6 @@ const laplaceDistribution = () => {
 	return laplaceRandom;
 }
 
-const oddDistribution() = (x) => {
-	if (x > 
-	
-
 function setupLaplaceGraph(svg, height) {
 	const rects = svg
 		.selectAll('rect')
@@ -70,7 +66,9 @@ $(document).ready( () =>  {
 			.duration(500)
 			.attr('y', (d) => { return height - heightScaler(d);})
 			.attr('height', (d) => {return  heightScaler(d); });
-		$('#discharged').text(dischargedNumber);
+		$('#discharged').text("discharged: " + dischargedNumber);
+		$('#sampled').text("sampled: " + 
+			sampledData.reduce( (prev, curr) => (prev + curr), 0)); 
 	};
 
 	$('#add-one').click( () => {
